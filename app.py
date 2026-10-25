@@ -1,4 +1,3 @@
-
 from fastapi import FastAPI
 from pydantic import BaseModel, Field
 
@@ -47,3 +46,4 @@ def validate(project: MicrostripProject):
         "message": "No electromagnetic simulation has been run.",
         "project": project.model_dump()
     }
+
